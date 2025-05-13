@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoBot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+    body {
+        font-family: 'Orbitron', sans-serif;
+    }
+    .neon {
+        text-shadow: 0 0 2px #00ff88, 0 0 2px #00ff88;
+        color: #ccffdd;
+    }
+</style>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white">
+    <header class="px-6 py-4 border-b border-gray-700 bg-black/60 shadow-md">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row md:justify-between md:items-center space-y-4 md:space-y-0">
+            <div class="flex justify-between items-center w-full md:w-auto">
+                <h1 class="text-2xl font-bold neon">CryptoBot</h1>
+                <div class="md:hidden">
+                    <button onclick="toggleMenu()" class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="w-full md:hidden flex justify-center">
+                <a href="#download" class="bg-green-500 hover:bg-green-400 px-4 py-2 rounded-lg text-white font-bold text-sm transition-transform transform hover:scale-105">⬇️ Скачать</a>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm uppercase tracking-wide">
+                <a href="#how" class="hover:text-green-400">Як працює</a>
+                <a href="#networks" class="hover:text-green-400">Мережі</a>
+                <a href="#security" class="hover:text-green-400">Безпека</a>
+                <a href="#target" class="hover:text-green-400">Кому підходить</a>
+                <a href="#download" class="hover:text-green-400">Завантажити</a>
+            </nav>
+            <div class="hidden md:block">
+                <a href="#download" class="bg-green-500 hover:bg-green-400 px-4 py-2 rounded-lg text-white font-bold text-sm transition-transform transform hover:scale-105">⬇️ Скачать</a>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden mt-4 px-4 space-y-2 text-sm uppercase tracking-wide">
+            <a href="#how" class="block hover:text-green-400">Як працює</a>
+            <a href="#networks" class="block hover:text-green-400">Мережі</a>
+            <a href="#security" class="block hover:text-green-400">Безпека</a>
+            <a href="#target" class="block hover:text-green-400">Кому підходить</a>
+            <a href="#download" class="block hover:text-green-400">Завантажити</a>
+        </div>
+    </header>
+
+    <section class="px-6 py-24 bg-black text-center border-b border-gray-800" id="hero">
+        <div class="max-w-5xl mx-auto">
+            <span class="inline-block bg-green-600 text-black text-xs md:text-sm font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">🔥 Новинка 2025</span>
+            <h2 class="text-4xl md:text-6xl font-extrabold neon leading-tight" style="margin-bottom: 40px;">
+                Купив на $20 — злив на $200.<br>
+                <span class="text-2xl md:text-4xl neon block mt-2 text-green-400">DEX Sniper, який не спить.</span>
+            </h2>
+            <p class="text-lg md:text-2xl text-gray-400 max-w-4xl mx-auto mb-10 px-2 md:px-4" style="line-height: 2.5rem;">
+                🚀 <strong>Реальний бот</strong>, який відправляє <strong>buy-транзакцію</strong> раніше всіх.<br>
+                🧠 <span class="text-gray-400">Uniswap, Pancake, Base — підключаєш гаманець, <br> налаштовуєш токен, запускаєш.</span><br>
+                🛡️ <span class="text-gray-400">Жодних панелей. Тільки CLI і швидкість.</span>
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                <a href="#download"
+                   class="bg-green-500 hover:bg-green-400 text-white text-xl font-bold px-10 py-4 rounded-full transition-transform transform hover:scale-105 shadow-lg">
+                    ⬇️ Скачать Sniper (.exe)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sniper Result Section -->
+    <section class="px-6 py-12 bg-gradient-to-br from-gray-900 to-black text-center border-b border-gray-800">
+        <h3 class="text-2xl md:text-3xl font-bold text-green-400 mb-8">🚀 Результати Sniper</h3>
+        <div class="bg-gray-800 rounded-2xl p-6 md:p-8 max-w-2xl mx-auto border border-green-500 shadow-xl transition hover:scale-[1.015]">
+            <p class="text-base md:text-lg text-gray-300 mb-2">
+                <span class="text-green-400 font-semibold">$FUCKYES</span> — куплено за <span class="font-bold text-white">0.003s</span> після появи.
+            </p>
+            <p class="text-base md:text-lg text-gray-300 mb-2">
+                ⛽ <span class="text-green-300">Gas оптимізовано</span> · 🛡️ <span class="text-green-300">Front-run захист вшитий</span>
+            </p>
+            <p class="text-xl md:text-2xl font-extrabold text-green-500 mt-4">📈 Прибуток: +927%</p>
+        </div>
+    </section>
+
+    <main class="px-6 py-16 max-w-5xl mx-auto space-y-20">
+
+        <!-- Як працює бот -->
+        <section id="how">
+            <h2 class="text-4xl font-bold mb-6 text-green-400">Як працює бот?</h2>
+            <ol class="space-y-5 text-xl list-decimal list-inside">
+                <li><span class="font-semibold text-white">Обери мережу</span> та RPC — бот підключається без авторизацій.</li>
+                <li><span class="font-semibold text-white">Введи адресу</span> токена або контракту.</li>
+                <li><span class="font-semibold text-white">Натисни “Старт”</span> — бот миттєво реагує на зміни.</li>
+            </ol>
+        </section>
+
+        <!-- Що підтримує -->
+        <section id="networks">
+            <h2 class="text-4xl font-bold mb-6 text-green-400">Підтримка мереж</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-lg">
+                <div class="bg-gray-800 p-6 rounded-xl text-center border border-green-500">Ethereum</div>
+                <div class="bg-gray-800 p-6 rounded-xl text-center border border-green-500">BSC</div>
+                <div class="bg-gray-800 p-6 rounded-xl text-center border border-green-500">Polygon</div>
+                <div class="bg-gray-800 p-6 rounded-xl text-center border border-green-500">Arbitrum</div>
+                <div class="bg-gray-800 p-6 rounded-xl text-center border border-green-500">Base</div>
+                <div class="bg-gray-800 p-6 rounded-xl text-center border border-green-500">Custom RPC</div>
+            </div>
+        </section>
+
+        <!-- Безпека -->
+        <section id="security">
+            <h2 class="text-4xl font-bold mb-6 text-green-400">Безпека перш за все</h2>
+            <ul class="space-y-4 text-xl">
+                <li>🔒 <span class="text-white font-semibold">Локальна робота</span> — без сторонніх серверів</li>
+                <li>🚫 <span class="text-white font-semibold">Немає логінів</span> або збору особистих даних</li>
+                <li>🛡️ <span class="text-white font-semibold">Немає API ключів</span>, доступ без ризику</li>
+                <li>🔓 <span class="text-white font-semibold">Відкритий код</span> на GitHub</li>
+            </ul>
+        </section>
+
+        <!-- Кому підходить -->
+        <section id="target">
+            <h2 class="text-4xl font-bold mb-6 text-green-400">Кому підходить?</h2>
+            <div class="grid md:grid-cols-3 gap-6 text-xl">
+                <div class="bg-black border-2 border-green-400 p-6 rounded-2xl text-center hover:scale-105 transition">⚡ Скальпери</div>
+                <div class="bg-black border-2 border-green-400 p-6 rounded-2xl text-center hover:scale-105 transition">🔥 Memcoin трейдери</div>
+                <div class="bg-black border-2 border-green-400 p-6 rounded-2xl text-center hover:scale-105 transition">🎯 Учасники Sniper-чатів</div>
+            </div>
+        </section>
+
+        <!-- Кнопка завантаження внизу -->
+        <section id="download" class="text-center pt-12">
+            <a href="#" class="inline-block bg-green-500 hover:bg-green-400 text-white text-2xl font-bold px-8 py-4 rounded-full transition-transform transform hover:scale-105">⬇️ Завантажити CryptoBot</a>
+            <p class="mt-4 text-gray-400">Працює на Windows, MacOS, Linux</p>
+        </section>
+    </main>
+
+    <footer class="text-center py-8 border-t border-gray-700 text-gray-500 text-sm">
+        &copy; 2025 CryptoBot. Надійний бот для Web3 трейдерів.
+    </footer>
+</body>
+</html>
